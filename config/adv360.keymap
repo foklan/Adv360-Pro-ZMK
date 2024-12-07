@@ -23,7 +23,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -32,7 +32,7 @@
         key_w_layer_switch: key_w_layer_switch {
             compatible = "zmk,behavior-hold-tap";
             label = "KEY_W_LAYER_SWITCH";
-            bindings = <&tog>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
