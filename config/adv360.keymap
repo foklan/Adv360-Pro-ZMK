@@ -10,12 +10,6 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        sudo: macro_ver {
-            compatible = "zmk,behavior-macro";
-            label = "macro_version";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp U &kp D &kp O &kp SPACE &kp S &kp U &kp SPACE &kp MINUS>;
-        };
 
         #endif
 
@@ -41,14 +35,11 @@
         };
     };
 
-    macros {
-    };
-
     combos {
         compatible = "zmk,combos";
 
         sudo_macro {
-            bindings = <&sudo>;
+            bindings = <&kp ENTER>;
             key-positions = <67 68>;
         };
     };
