@@ -22,6 +22,7 @@
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <50>;
         };
 
         lth: layer_tap_hold {
