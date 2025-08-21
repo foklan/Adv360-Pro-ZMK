@@ -39,17 +39,18 @@
         compatible = "zmk,combos";
 
         sudo_test {
-            bindings = <&sudo_macro>;
+            bindings = <&win_menu>;
             key-positions = <67 68>;
         };
     };
 
     macros {
-        sudo_macro: sudo_macro {
+        win_menu: win_menu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp U &kp D &kp O &kp SPACE &kp S &kp U &kp SPACE &kp MINUS>;
-            label = "SUDO_MACRO";
+            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp LEFT_ALT &kp END>;
+
+            label = "WIN_MENU";
         };
     };
 
