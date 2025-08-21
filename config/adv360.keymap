@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_HOLD";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
