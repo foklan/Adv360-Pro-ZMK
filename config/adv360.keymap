@@ -42,6 +42,27 @@
         sudo_macro {
             bindings = <&kp ENTER>;
             key-positions = <67 68>;
+            layers = <0>;
+            require-prior-idle-ms = <500>;
+        };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 13>;
+        };
+
+        sudo_test {
+            bindings = <&sudo>;
+            key-positions = <36 37>;
+        };
+    };
+
+    macros {
+        sudo: sudo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp U &kp D &kp O &kp SPACE &kp S &kp U &kp SPACE &kp MINUS>;
+            label = "SUDO";
         };
     };
 
