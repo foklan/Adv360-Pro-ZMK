@@ -35,24 +35,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        sudo_test {
-            bindings = <&win_menu>;
-            key-positions = <67 68>;
-        };
-    };
-
-    macros {
-        win_menu: win_menu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_CONTROL &kp LEFT_ALT &kp END>;
-
-            label = "WIN_MENU";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
